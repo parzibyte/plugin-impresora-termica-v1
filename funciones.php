@@ -4,6 +4,20 @@ include_once "vendor/autoload.php";
 use Symfony\Component\Translation\Loader\JsonFileLoader;
 use Symfony\Component\Translation\Translator;
 
+function obtenerPrecioDominioIlimitado()
+{
+    return 25;
+}
+function obtenerPrecioDominioAdicional()
+{
+    return 2;
+}
+
+function obtenerPrecioPlugin()
+{
+    return 25;
+}
+
 function cadenaEmpiezaCon($cadena, $busqueda)
 {
     return mb_substr($cadena, 0, mb_strlen($busqueda)) === $busqueda;

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla inicial de Bulma CSS - By Parzibyte</title>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css">
+    <script src="https://parzibyte.github.io/plugin-ticket-js/Impresora.js"></script>
 </head>
 
 <body>
@@ -29,13 +30,13 @@
                 <a class="navbar-item" href="comenzar_a_usar.php"><?php echo traducir("comenzar_a_usar") ?></a>
                 <a class="navbar-item" href="caracteristicas.php"><?php echo traducir("caracteristicas") ?></a>
                 <a class="navbar-item" href="documentacion.php"><?php echo traducir("documentacion") ?></a>
-                <a class="navbar-item" href="index.php"><?php echo traducir("ejemplos") ?></a>
-                <a class="navbar-item" href="index.php"><?php echo traducir("errores") ?></a>
+                <a class="navbar-item" href="ejemplo.php"><?php echo traducir("ejemplo") ?></a>
+                <a class="navbar-item" href="faq.php"><?php echo traducir("faq") ?></a>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a target="_blank" rel="noreferrer" href="https://parzibyte.me/l/fW8zGd"
+                        <a  rel="noreferrer" href="comprar.php"
                             class="button is-primary">
                             <strong><?php echo traducir("comprar") ?></strong>
                         </a>

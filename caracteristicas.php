@@ -24,13 +24,14 @@ include_once "encabezado.php";
                 <ol>
                     <li><?php echo traducir("no_soportado_1") ?></li>
                     <li><?php echo traducir("no_soportado_2") ?></li>
+                    <li><?php echo traducir("no_soportado_3") ?></li>
                 </ol>
             </div>
             <div class="notification is-info has-text-centered">
                 <?php echo traducir("mensaje_caracteristicas_no_soportadas") ?>
                 <br>
                 <a class="button is-danger" href="https://parzibyte.me/blog/2021/02/09/presentando-plugin-impresoras-termicas-version-2/"><?php echo traducir("ver_version_2") ?></a>
-                <a class="button is-warning" href="https://parzibyte.me/blog/2021/02/09/presentando-plugin-impresoras-termicas-version-2/"><?php echo traducir("ver_plugin_pdf") ?></a>
+                <a class="button is-warning" href="https://parzibyte.me/blog/2020/12/07/plugin-imprimir-pdf-manera-silenciosa-javascript/"><?php echo traducir("ver_plugin_pdf") ?></a>
             </div>
         </div>
     </div>
