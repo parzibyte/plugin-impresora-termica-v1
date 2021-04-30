@@ -23,7 +23,7 @@ function cadenaEmpiezaCon($cadena, $busqueda)
     return mb_substr($cadena, 0, mb_strlen($busqueda)) === $busqueda;
 }
 
-function traducir($cadena)
+function obtenerIdioma()
 {
     $idiomaDetectado = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
     /*
@@ -31,6 +31,12 @@ function traducir($cadena)
     Si no, lo dejamos intacto y caerá por defecto en inglés
      */
     $idioma = cadenaEmpiezaCon($idiomaDetectado, "es") ? "es" : $idiomaDetectado;
+    return $idioma;
+}
+
+function traducir($cadena)
+{
+    $idioma = obtenerIdioma();
     $traductor = new Translator($idioma);
     $traductor->addLoader("json", new JsonFileLoader());
     $traductor->addResource("json", "idioma_es.json", "es");
