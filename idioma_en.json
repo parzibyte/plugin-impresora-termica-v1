@@ -1,0 +1,5 @@
+{
+    "saludo": "Hello world",
+    "bienvenido": "Welcome, {usuario}",
+    "documentacion": "Documentación"
+}
