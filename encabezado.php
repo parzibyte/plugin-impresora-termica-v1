@@ -17,8 +17,7 @@
             <a class="navbar-item" href="https://parzibyte.me/blog">
                 <h2 class="is-size-5">Plugin v1</h2>
             </a>
-            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
+            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -36,8 +35,21 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a  rel="noreferrer" href="comprar.php"
-                            class="button is-primary">
+                        <a href="https://parzibyte.me/blog/2022/09/30/plugin-impresoras-termicas-version-3/" class="button is-danger">
+                            <strong><?php echo traducir("version_3") ?></strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="https://parzibyte.me/blog/2022/10/04/codigo-fuente-plugin-impresora-termica-v1/" class="button is-success">
+                            <strong><?php echo traducir("source_code") ?></strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a rel="noreferrer" href="comprar.php" class="button is-primary">
                             <strong><?php echo traducir("comprar") ?></strong>
                         </a>
                     </div>

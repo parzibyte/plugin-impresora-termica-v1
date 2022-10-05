@@ -70,5 +70,7 @@
     "no_devoluciones": "Lea todas las preguntas frecuentes y consideraciones antes de comprar porque no hago devoluciones por ningún motivo",
     "sitio_open_source": "Este sitio web es open source. Puedes ver el código en <a href='https://github.com/parzibyte/plugin-impresora-termica-v1'>GitHub</a>",
     "titulo_pagina": "Plugin para imprimir en impresoras térmicas usando JavaScript",
-    "imprimir": "Imprimir"
+    "imprimir": "Imprimir",
+    "version_3": "Versión 3",
+    "source_code": "Código fuente"
 }
