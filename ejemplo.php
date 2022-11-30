@@ -20,66 +20,47 @@ include_once "encabezado.php";
         </div>
 
     </div>
-    <script>
-        const $listaDeImpresoras = document.querySelector("#listaDeImpresoras"),
-            $btnImprimir = document.querySelector("#btnImprimir");
+    <script>const obtenerListaDeImpresoras = async () => {
+    return await ConectorPluginV3.obtenerImpresoras();
+}
+const URLPlugin = "http://localhost:8000"
+const $listaDeImpresoras = document.querySelector("#listaDeImpresoras"),
+    $btnImprimir = document.querySelector("#btnImprimir");
 
-
-        const obtenerListaDeImpresoras = () => {
-            console.log("Cargando lista...");
-            Impresora.getImpresoras()
-                .then(listaDeImpresoras => {
-                    console.log("Lista cargada");
-                    listaDeImpresoras.forEach(nombreImpresora => {
-                        const option = document.createElement('option');
-                        option.value = option.text = nombreImpresora;
-                        $listaDeImpresoras.appendChild(option);
-                    })
-                });
+const init = async () => {
+    const impresoras = await ConectorPluginV3.obtenerImpresoras(URLPlugin);
+    for (const impresora of impresoras) {
+        $listaDeImpresoras.appendChild(Object.assign(document.createElement("option"), {
+            value: impresora,
+            text: impresora,
+        }));
+    }
+    $btnImprimir.addEventListener("click", () => {
+        const nombreImpresora = $listaDeImpresoras.value;
+        if (!nombreImpresora) {
+            return alert("Por favor seleccione una impresora. Si no hay ninguna, asegúrese de haberla compartido como se indica en: https://parzibyte.me/blog/2017/12/11/instalar-impresora-termica-generica/")
         }
+        imprimirHolaMundo(nombreImpresora);
+    });
+}
 
-        $btnImprimir.addEventListener("click", () => {
-            let impresora = new Impresora();
-            impresora.setFontSize(1, 1);
-            impresora.write("Fuente 1,1\n");
-            impresora.setFontSize(1, 2);
-            impresora.write("Fuente 1,2\n");
-            impresora.setFontSize(2, 2);
-            impresora.write("Fuente 2,2\n");
-            impresora.setFontSize(2, 1);
-            impresora.write("Fuente 2,1\n");
-            impresora.setFontSize(1, 1);
-            impresora.setEmphasize(1);
-            impresora.write("Emphasize 1\n");
-            impresora.setEmphasize(0);
-            impresora.write("Emphasize 0\n");
-            impresora.setAlign("center");
-            impresora.write("Centrado\n");
-            impresora.setAlign("left");
-            impresora.write("Izquierda\n");
-            impresora.setAlign("right");
-            impresora.write("Derecha\n");
-            impresora.setFont("A");
-            impresora.write("Fuente A\n");
-            impresora.setFont("B");
-            impresora.write("Fuente B\n");
-            impresora.feed(2);
-            impresora.write("Separado por 2\n");
-            impresora.setAlign("center");
-            impresora.write("QR:\n");
-            impresora.qr("https://parzibyte.me/blog");
-            impresora.write("Barcode:\n");
-            impresora.barcode("123456", 80, "barcode128");
-            impresora.cut();
-            impresora.cutPartial(); // Pongo este y también cut porque en ocasiones no funciona con cut, solo con cutPartial
-            impresora.cash();
-            impresora.imprimirEnImpresora($listaDeImpresoras.value);
-        });
 
-        // En el init, obtenemos la lista
-        obtenerListaDeImpresoras();
-    </script>
+const imprimirHolaMundo = async (nombreImpresora) => {
+    const conector = new ConectorPluginV3(URLPlugin);
+    conector.Iniciar();
+    conector.EscribirTexto("Hola mundo\nParzibyte.me");
+    conector.Feed(1);
+    const respuesta = await conector
+        .imprimirEn(nombreImpresora);
+    if (respuesta === true) {
+        alert("Impreso correctamente");
+    } else {
+        alert("Error: " + respuesta);
+    }
+}
+init();</script>
 </div>
+
 <?php
 include_once "pie.php";
 ?>

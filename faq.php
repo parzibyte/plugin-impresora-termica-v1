@@ -6,14 +6,11 @@ include_once "encabezado.php";
         <h1 class="is-size-1 has-text-centered"><?php echo traducir("faq") ?></h1>
         <div class="content">
             <ol>
-                <li><?php echo traducir("faq1") ?></li>
-                <li><?php echo traducir("faq2") ?></li>
-                <li><?php echo traducir("faq3") ?></li>
-                <li><?php echo traducir("faq4") ?></li>
-                <li><?php echo traducir("faq5") ?></li>
-                <li><?php echo traducir("faq6") ?></li>
-                <li><?php echo traducir("faq7") ?></li>
-                <li><?php echo traducir("faq8") ?></li>
+                <?php for ($i = 1; $i <= 5; $i++) { ?>
+                    <li><?php echo traducir("faq$i") ?></li>
+                <?php
+                }
+                ?>
             </ol>
         </div>
     </div>

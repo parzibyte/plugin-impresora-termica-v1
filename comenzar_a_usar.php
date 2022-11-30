@@ -18,7 +18,7 @@ include_once "encabezado.php";
         <div class="has-text-centered">
 
             <h1 class="is-size-1 has-text-centered"><?php echo traducir("siguientes_pasos") ?></h1>
-            <a class="button is-info" href="https://github.com/parzibyte/plugin-ticket-js/tree/master/ejemplos"><?php echo traducir("codigo_fuente_ejemplos") ?></a>
+            <a class="button is-info" href="https://parzibyte.github.io/ejemplos-javascript-plugin-v3/hola.html"><?php echo traducir("codigo_fuente_ejemplos") ?></a>
             <a class="button is-warning" href="caracteristicas.php"><?php echo traducir("caracteristicas") ?></a>
             <a class="button is-danger" href="documentacion.php"><?php echo traducir("documentacion") ?></a>
         </div>
