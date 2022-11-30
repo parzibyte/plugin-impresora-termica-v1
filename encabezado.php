@@ -8,6 +8,7 @@
     <title><?php echo traducir("titulo_pagina") ?>- By Parzibyte</title>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css">
     <script src="https://parzibyte.github.io/ejemplos-javascript-plugin-v3/ConectorJavaScript.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4859317680104877" crossorigin="anonymous"></script>
 </head>
 
 <body>
