@@ -29,7 +29,7 @@
                 <a class="navbar-item" href="index.php"><?php echo traducir("inicio") ?></a>
                 <a class="navbar-item" href="comenzar_a_usar.php"><?php echo traducir("comenzar_a_usar") ?></a>
                 <a class="navbar-item" href="caracteristicas.php"><?php echo traducir("caracteristicas") ?></a>
-                <a class="navbar-item" target="_blank" href="https://gist.github.com/parzibyte/2f36655ef9d6ea8e6de73c6e09bbc735#file-documentacion-txt"><?php echo traducir("documentacion") ?></a>
+                <a class="navbar-item" target="_blank" href="https://parzibyte.me/http-esc-pos-desktop-docs/es/"><?php echo traducir("documentacion") ?></a>
                 <a class="navbar-item" href="ejemplo.php"><?php echo traducir("ejemplo") ?></a>
                 <a class="navbar-item" href="faq.php"><?php echo traducir("faq") ?></a>
             </div>
@@ -62,3 +62,10 @@
         });
     </script>
     <section class="section">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <div class="notification is-danger">
+                    <p><?php echo traducir("mensaje_api_obsoleta") ?></p>
+                </div>
+            </div>
+        </div>

@@ -54,5 +54,6 @@
     "titulo_pagina": "Plugin to print to thermal printers directly from browser by using JavaScript",
     "imprimir": "Print",
     "android_version": "Android version",
-    "source_code": "Source code"
+    "source_code": "Source code",
+    "mensaje_api_obsoleta": "Take a look at the new docs: <a href='https://parzibyte.me/http-esc-pos-desktop-docs/es/'>https://parzibyte.me/http-esc-pos-desktop-docs/es/</a>"
 }

@@ -54,5 +54,6 @@
     "titulo_pagina": "Plugin para imprimir en impresoras térmicas usando JavaScript",
     "imprimir": "Imprimir",
     "android_version": "Versión para Android",
-    "source_code": "Código fuente"
+    "source_code": "Código fuente",
+    "mensaje_api_obsoleta": "Mira la nueva documentación completa: <a href='https://parzibyte.me/http-esc-pos-desktop-docs/es/'>https://parzibyte.me/http-esc-pos-desktop-docs/es/</a>"
 }
