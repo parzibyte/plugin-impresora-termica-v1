@@ -41,7 +41,7 @@
     "modo_de_uso": "Modo de uso",
     "parrafo_1_ejemplo": "El siguiente ejemplo va a imprimir un ticket de prueba en la impresora seleccionada",
     "aviso_requisito_plugin": "Recuerda que el plugin se debe estar ejecutando en segundo plano. Selecciona tu impresora e imprime un ticket de ejemplo.<br><strong>Nota: si la lista aparece vacía, es porque el plugin no se está ejecutando</strong>",
-    "aviso_mas_ejemplos": "Puedes ver más ejemplos en el <a href='https://github.com/parzibyte/ejemplos-javascript-plugin-v3/'>repositorio de GitHub</a> o <a href='https://parzibyte.github.io/ejemplos-javascript-plugin-v3/hola.html'>probarlos en vivo</a>",
+    "aviso_mas_ejemplos": "Puedes ver más ejemplos en el <a href='https://parzibyte.me/http-esc-pos-desktop-docs/es/'>la documentación</a> o <a href='https://parzibyte.me/http-esc-pos-desktop-docs/'>probarlos en vivo</a>",
     "ejemplo_imprimir_ticket": "Ejemplo para imprimir ticket en impresora térmica",
     "probar_ejemplo": "Probar ejemplo en vivo",
     "faq": "Preguntas frecuentes",
